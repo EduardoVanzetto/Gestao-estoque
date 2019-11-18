@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cad_produto.nome %>
+</p>
+
+<p>
+  <strong>Unidade:</strong>
+  <%= @cad_produto.unidade %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @cad_produto.produto %>
+</p>
+
+<%= link_to 'Edit', edit_cad_produto_path(@cad_produto) %> |
+<%= link_to 'Back', cad_produtos_path %>

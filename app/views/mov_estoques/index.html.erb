@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mov Estoques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Quantidade</th>
+      <th>Pessoa</th>
+      <th>Operacao</th>
+      <th>Produto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mov_estoques.each do |mov_estoque| %>
+      <tr>
+        <td><%= mov_estoque.data %></td>
+        <td><%= mov_estoque.quantidade %></td>
+        <td><%= mov_estoque.pessoa %></td>
+        <td><%= mov_estoque.operacao %></td>
+        <td><%= mov_estoque.produto %></td>
+        <td><%= link_to 'Show', mov_estoque %></td>
+        <td><%= link_to 'Edit', edit_mov_estoque_path(mov_estoque) %></td>
+        <td><%= link_to 'Destroy', mov_estoque, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mov Estoque', new_mov_estoque_path %>
