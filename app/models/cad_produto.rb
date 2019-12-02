@@ -4,4 +4,5 @@ class CadProduto < ApplicationRecord
 
   validates :nome, :unidade, presence: true
   validates :nome, uniqueness: true
+
 end

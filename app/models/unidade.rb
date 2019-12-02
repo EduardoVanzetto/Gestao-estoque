@@ -1,6 +1,6 @@
 class Unidade < ApplicationRecord
 
-    validates :sigla, :descricao, presence: true
-    validates :sigla, uniqueness: true
+    validates :descricao, :sigla, presence: true
+    validates :descricao, :sigla, uniqueness: true
 
 end

@@ -1,22 +1,21 @@
 FactoryBot.define do
-
-    factory :op_compra, class: 'Operacao' do
+    factory :operacao_compra, class: 'Operacao' do
         descricao { 'movimento' }
         tipo { :venda }
     end
 
-    factory :op_venda, class: 'Operacao' do
+    factory :operacao_venda, class: 'Operacao' do
         descricao { 'movimento' }
         tipo { :compra }
     end
 
-    factory :opDev_venda, class: 'Operacao' do
+    factory :operacao_devolucao_venda, class: 'Operacao' do
         descricao { 'movimento' }
-        tipo { :dev_venda }
+        tipo { :devolucaoVenda }
     end
 
-    factory :opDev_compra, class: 'Operacao' do
+    factory :operacao_devolucao_compra, class: 'Operacao' do
         descricao { 'movimento' }
-        tipo { :dev_compra }
+        tipo { :devolucaoCompra }
     end
 end
