@@ -1,15 +1,15 @@
 require 'rails_helper'
 
-RSpec.describe Mov_Service, type: :model do
+RSpec.describe MovimentoService, type: :model do
 
     context 'ao processar' do
 
         let(:endereco) { FactoryBot.create(:endereco) }
         let(:pessoa) { FactoryBot.create(:pessoa, endereco: endereco) }
-        let(:cadastro_produto) { FactoryBot.create(:produto) }
+        let(:produto) { FactoryBot.create(:produto) }
         let(:unidade) { FactoryBot.create(:unidade) }
-        let(:produto) { FactoryBot.create(:cad_produto, 
-                                          produto: cadastro_produto,
+        let(:cad_produto) { FactoryBot.create(:cad_produto, 
+                                          produto: produto,
                                           unidade: unidade) }
         
         context 'uma compra' do
