@@ -6,10 +6,10 @@ RSpec.describe MovimentoService, type: :model do
 
         let(:endereco) { FactoryBot.create(:endereco) }
         let(:pessoa) { FactoryBot.create(:pessoa, endereco: endereco) }
-        let(:cadastro_produto) { FactoryBot.create(:cad_produto) }
+        let(:cadastro_produto) { FactoryBot.create(:produto) }
         let(:unidade) { FactoryBot.create(:unidade) }
-        let(:produto) { FactoryBot.create(:produto, 
-                                          cad_produto: cadastro_produto,
+        let(:produto) { FactoryBot.create(:cad_produto, 
+                                          produto: cadastro_produto,
                                           unidade: unidade) }
         
         context 'uma compra' do

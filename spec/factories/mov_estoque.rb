@@ -7,7 +7,7 @@ FactoryBot.define do
 
       association :pessoa, factory: :pessoa
       association :operacao, factory: :operacao
-      association :produto, factory: :produto
+      association :cad_produto, factory: :cad_produto
       
     end
   end

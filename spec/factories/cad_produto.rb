@@ -1,8 +1,10 @@
 FactoryBot.define do
 
-    factory :gprod do
-
-      nome { 'Alimentos' }
+  factory :cad_produto do
       
-    end
+    nome { 'Pera' }
+
+    association :unidade, factory: :unidade
+    association :produto, factory: :produto
   end
+end
