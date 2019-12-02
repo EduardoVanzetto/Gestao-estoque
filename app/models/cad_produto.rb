@@ -2,5 +2,6 @@ class CadProduto < ApplicationRecord
   belongs_to :unidade
   belongs_to :produto
 
-  validates :nome, presence:true, uniqueness: true
+  validates :nome, :unidade, presence: true
+  validates :nome, uniqueness: true
 end

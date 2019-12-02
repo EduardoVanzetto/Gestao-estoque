@@ -1,6 +1,6 @@
 FactoryBot.define do
 
-    factory :movimento do
+    factory :mov_estoque do
 
       data { '2019-12-01' }
       quantidade { 35 }

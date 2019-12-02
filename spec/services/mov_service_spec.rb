@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe MovimentoService, type: :model do
+RSpec.describe Mov_Service, type: :model do
 
     context 'ao processar' do
 

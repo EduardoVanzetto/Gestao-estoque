@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Movimento, type: :model do
+RSpec.describe Mov_Estoque, type: :model do
     context 'validações gerais' do
 
       it { should validate_presence_of(:data) }
